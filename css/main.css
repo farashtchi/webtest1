@@ -1,0 +1,58 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box; 
+    background-color: burlywood;
+}
+
+.parent{
+    width:112px;
+    height:400px;
+    background-color: white;
+    margin: 100px auto;
+    position: relative;
+    border: 2px solid black;
+    .red{
+        width:100px;
+        height:100px;
+        background-color:rgb(243, 71, 85);
+       position: absolute;
+       top:15px;
+       left:5px;
+       border-radius: 50px;
+       border:1px solid black;
+       box-shadow:  0px -6px 16px 2px black;
+    }
+    
+    .yellow{
+        width:100px;
+        height:100px;
+        background-color: rgb(201, 191, 49);
+        position: absolute;
+       top:148px;
+       left:5px;
+       border-radius: 50px;
+       border:1px solid black;
+       box-shadow:  0px -6px 16px 2px black;
+       transition-delay: 0ms;
+    }
+    .green{
+        width:100px;
+        height:100px;
+        background-color: rgb(111, 185, 111);
+        position: absolute;
+       top:285px;
+       left:5px;
+       border-radius: 50px;
+       border:1px solid black;
+       box-shadow:  0px -6px 16px 2px black;
+       transition-delay: 0ms;
+}
+}
+.parent:hover .red{ background-color:red;}  
+.parent:hover .yellow{ background-color:yellow;
+    transition-delay: 400ms; 
+}
+.parent:hover .green{ background-color:green;
+    transition-delay: 800ms; 
+}
